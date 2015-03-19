@@ -6,12 +6,14 @@
 
 namespace CC {
 
-// https://en.wikipedia.org/wiki/Elongated_dodecahedron
+// http://en.wikipedia.org/wiki/Trapezo-rhombic_dodecahedron
 class WDomain {
   private:
     vector3 pos;
     float32_t radius;
+    WDomain &parent;
     WDomain &neighbours[12];
+    WDomain &children[13];
     ObjectTracker &objtracker;
     bool init();
     bool tick();
@@ -20,6 +22,7 @@ class WDomain {
     
   public:
     WDomain();
+    WDomain(WDomain &parent, float32_t radius, uint8_t innerID);
     ~WDomain();
     
     uint64_t addObject(cc_object &obj, bool track_pos,

@@ -1,10 +1,3 @@
-/*! \brief CC plugin class
- * 
- * 
- * 
- * 
- * 
- */
 #ifndef __CC_PLUGIN_H__
 #define __CC_PLUGIN_H__
 
