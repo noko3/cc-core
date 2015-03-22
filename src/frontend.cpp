@@ -1,9 +1,9 @@
-//virtual bool CCFrontEnd::init();
-//virtual bool CCFrontEnd::fini();
+//virtual bool CCFrontend::init();
+//virtual bool CCFrontend::fini();
 
 #include "frontend.h"
 
-CCFrontEnd::CCFrontEnd() {
+CCFrontend::CCFrontend() {
     // 1. read config
     // 2. start the client, or connect to a running one
     // 3. initialize common subsystems
@@ -36,7 +36,7 @@ CCFrontEnd::CCFrontEnd() {
     this.init();
 }
 
-CCFrontEnd::~CCFrontEnd() {
+CCFrontend::~CCFrontend() {
     // 1. gracefully disconnect from the client
     // 2. save changes
     // 3. stop compartment-dependent subsystems, this.fini();
@@ -51,6 +51,6 @@ CCFrontEnd::~CCFrontEnd() {
     /* this.kill_subsystems(); *////TODO
 }
 
-bool CCFrontEnd::tick() {
+bool CCFrontend::tick() {
     return true;
 }

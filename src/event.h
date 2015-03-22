@@ -46,7 +46,7 @@ class EventPublisher {
 
 class EventSubscriber {
   protected:
-    
+    //
 };
 
 class EventArgs {
